@@ -11,7 +11,6 @@ body {
 
 em {
   font-style: inherit;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -79,7 +78,8 @@ p {
   }
 
   .optimilfpram {
-    writing-mode: vertical-rl;
+    --turn: .5turn;
+    writing-mode: vertical-lr;
   }
 }
 
