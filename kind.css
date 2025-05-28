@@ -19,9 +19,9 @@ https://s9a.org/ooze
   --punk: rgb(270, 120, 330);
   --kink: rgb(120, 100, 300);
   --ooze: rgb(210, 210, 210);
-	--xxze: rgb(30, 10, 20);
-	--oooo: var(--ooze);
-	--xxxx: var(--xxze);
+  --xxze: rgb(30, 10, 20);
+  --oooo: var(--ooze);
+  --xxxx: var(--xxze);
 }
 
 .ooze.ooze {
@@ -39,7 +39,7 @@ https://s9a.org/ooze
 }
 
 ::selection {
-	background: var(--xxxx);
+  background: var(--xxxx);
   color: var(--oooo);
 }
 
@@ -58,8 +58,9 @@ https://s9a.org/ooze
 .kink { --ooze: var(--kink) }
 
 .spectra {
+  --turn: .75turn;
   background-image: linear-gradient(
-    .75turn,
+    var(--turn),
     var(--pulp),
     var(--pynk),
     var(--punk),
@@ -76,17 +77,26 @@ https://s9a.org/ooze
   );
 }
 
+@media (orientation: portrait) {
+  .spectra {
+    --turn: .5turn;
+  }
+}
+
 .spectre {
   background-image: radial-gradient(
-    var(--rain), var(--pour), var(--rain)
+    var(--rain),
+    var(--pour),
+    var(--rain)
   );
 }
 
 @media (prefers-color-scheme: dark) {
   .spectre {
     background-image: radial-gradient(
-      var(--pour), var(--kink), var(--pour)
+      var(--pour),
+      var(--kink),
+      var(--pour)
     );
   }
 }
-
