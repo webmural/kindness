@@ -79,14 +79,18 @@ https://s9a.org/ooze
 
 .spectre {
   background-image: radial-gradient(
-    var(--rain), var(--pour), var(--rain)
+    var(--rain),
+    var(--pour),
+    var(--rain)
   );
 }
 
 @media (prefers-color-scheme: dark) {
   .spectre {
     background-image: radial-gradient(
-      var(--pour), var(--kink), var(--pour)
+      var(--pour),
+      var(--kink),
+      var(--pour)
     );
   }
 }
