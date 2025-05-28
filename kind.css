@@ -77,6 +77,12 @@ https://s9a.org/ooze
   );
 }
 
+@media (orientation: portrait) {
+  .spectra {
+    --turn: .5turn;
+  }
+}
+
 .spectre {
   background-image: radial-gradient(
     var(--rain),

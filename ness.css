@@ -78,7 +78,6 @@ p {
   }
 
   .optimilfpram {
-    --turn: .5turn;
     writing-mode: vertical-lr;
   }
 }
