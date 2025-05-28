@@ -1,4 +1,5 @@
 # [kindness mural](https://webmural.com/kindness)
 
-* kindness questions
 * kindness synergy
+* profound questions
+* color therapy
