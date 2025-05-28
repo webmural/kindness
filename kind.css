@@ -1,5 +1,5 @@
 /*
-opensource ooze color
+opensource ooze color kinky remix
 https://s9a.page/ooze
 https://s9a.org/ooze
 */
@@ -17,6 +17,7 @@ https://s9a.org/ooze
   --pulp: rgb(180, 90, 240);
   --pynk: rgb(240, 120, 330); 
   --punk: rgb(270, 120, 330);
+  --kink: rgb(120, 100, 300);
   --ooze: rgb(210, 210, 210);
 	--xxze: rgb(30, 10, 20);
 	--oooo: var(--ooze);
@@ -54,6 +55,7 @@ https://s9a.org/ooze
 .pulp { --ooze: var(--pulp) }
 .pynk { --ooze: var(--pynk) }
 .punk { --ooze: var(--punk) }
+.kink { --ooze: var(--kink) }
 
 .spectra {
   background-image: linear-gradient(
@@ -69,12 +71,22 @@ https://s9a.org/ooze
     var(--wind),
     var(--teal),
     var(--rain),
-    var(--pour)
+    var(--pour),
+    var(--kink)
   );
 }
 
-.electra {
-  background-image: linear-gradient(
-    #ec0, #ce0, #bed, #7ed, darkorchid
+.spectre {
+  background-image: radial-gradient(
+    var(--rain), var(--pour), var(--rain)
   );
 }
+
+@media (prefers-color-scheme: dark) {
+  .spectre {
+    background-image: radial-gradient(
+      var(--pour), var(--kink), var(--pour)
+    );
+  }
+}
+
