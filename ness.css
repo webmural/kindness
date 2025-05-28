@@ -38,20 +38,12 @@ q {
   quotes: none;
 }
 
-.ffff {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.tttt {
-  letter-spacing: .618ch;
-}
-
 p {
   box-sizing: border-box;
-  border-bottom: 1ch dotted #bae;
-  flex-basis: 100%;
+  border-bottom: 1ch dotted var(--pour, plum);
+  contain: layout;
   display: block;
+  flex-basis: 100%;
   margin: 0;
   max-width: 100%;
   min-height: 61vh;
@@ -63,26 +55,46 @@ p {
   justify-self: center;
 }
 
+.ffff {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tttt {
+  letter-spacing: .618ch;
+}
+
 .optimilfpram {
   transform: rotate(180deg);
 }
 
 @media (orientation: portrait) {
+  .ffff {
+    font-size: 1.618rem;
+    font-weight: 600;
+  }
+  
+  .tttt {
+    letter-spacing: .382ch;
+  }
+
   .optimilfpram {
     writing-mode: vertical-rl;
   }
 }
 
 [href] {
+  padding-block: .2ex;
   padding-inline: .5ch;
 }
 
 .nemo {
-  text-decoration: dotted overline;
+  text-decoration: dotted overline var(--punk, plum);
   text-underline-offset: 1ex;
   text-decoration-thickness: 1ex;
 }
 
 :focus {
   outline: thick groove;
+  box-shadow: 0 0 .8ex .8ex var(--pynk, plum);
 }
